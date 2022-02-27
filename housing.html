@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+        <meta charset="utf8"/>
+        <link rel="icon" type="image/png" href="res/logo.png"/>
+        <title>Gîtes de La Guim</title>
+    </head>
+    <body>
+        <div id="app">
+            <v-app>
+                <v-app-bar dense app>
+                    <v-img src="res/logo.png" max-height="40" max-width="40"></v-img>
+                    <v-btn href="index.html">Accueil</v-btn>
+                    <v-btn href="housing.html">Nos gîtes</v-btn>
+                    <v-btn href="arround.html">Aux alentours</v-btn>
+                    <v-btn href="contact.html">Contact</v-btn>
+                </v-app-bar>
+                <v-main>
+                    <v-carousel cycle height="250"> <!-- TODO: file loading to be automated -->
+                        <v-carousel-item src="res/landscape/meinga.jpg"></v-carousel-item>
+                        <v-carousel-item src="res/landscape/plage1.jpg"></v-carousel-item>
+                    </v-carousel>
+                    <v-card>
+                        <v-card-title class="justify-center text-h2">Nos hébergements</v-card-title>
+                        <v-card>
+                            <v-card-title class="justify-center">Gîte 4 personnes</v-card-title>
+                            <v-carousel cycle max-height="150" style="padding-left: 20%; padding-right: 20%">
+                                <v-carousel-item src="res/G2/Terrasse.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G2/Chambe 2B.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G2/Exterieur.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G2/Salle d'eau.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G2/Salon.jpg"></v-carousel-item>
+                            </v-carousel>
+                            <v-card-text class="justify-center" style="padding-left: 20%; padding-right: 20%">Un gîte idéal, à l'écart pour encore plus de tranquilité.</v-card-text>
+                        </v-card>
+                        <v-card>
+                            <v-card-title class="justify-center">Appartement 5 personnes</v-card-title>
+                            <v-carousel cycle max-height="150" style="padding-left: 20%; padding-right: 20%">
+                                <v-carousel-item src="res/G1/Chambre 1.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G1/Chambre 2.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G1/Chambre 3.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G1/Cuisine.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G1/Exterieur.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G1/Salle d 'Eau.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G1/Salon.jpg"></v-carousel-item>
+                                <v-carousel-item src="res/G1/Terrasse.jpg"></v-carousel-item>
+                            </v-carousel>
+                            <v-card-text class="justify-center" style="padding-left: 20%; padding-right: 20%">Un appartement idéal pour un weekend en famille.</v-card-text>
+                        </v-card>
+                    </v-card>
+                </v-main>
+            </v-app>
+        </div>
+        <script src="main.js">
+        </script>
+    </body>
+</html>
